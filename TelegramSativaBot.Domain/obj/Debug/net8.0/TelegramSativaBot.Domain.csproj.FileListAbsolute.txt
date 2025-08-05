@@ -1,0 +1,11 @@
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\bin\Debug\net8.0\TelegramSativaBot.Domain.deps.json
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\bin\Debug\net8.0\TelegramSativaBot.Domain.dll
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\bin\Debug\net8.0\TelegramSativaBot.Domain.pdb
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\obj\Debug\net8.0\TelegramSativaBot.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\obj\Debug\net8.0\TelegramSativaBot.Domain.AssemblyInfoInputs.cache
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\obj\Debug\net8.0\TelegramSativaBot.Domain.AssemblyInfo.cs
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\obj\Debug\net8.0\TelegramSativaBot.Domain.csproj.CoreCompileInputs.cache
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\obj\Debug\net8.0\TelegramSativaBot.Domain.dll
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\obj\Debug\net8.0\refint\TelegramSativaBot.Domain.dll
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\obj\Debug\net8.0\TelegramSativaBot.Domain.pdb
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Domain\obj\Debug\net8.0\ref\TelegramSativaBot.Domain.dll
