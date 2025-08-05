@@ -47,11 +47,28 @@ namespace TelegramSativaBot.Presentation
                     var envToken = Environment.GetEnvironmentVariable("BOT_TOKEN");
                     var fallbackToken = "8348243210:AAFVQVv7oiEHc4IjblVqoKYb7ozapvUCfKw";
                     
-                    var botToken = configToken ?? envToken ?? fallbackToken;
-                    
                     // Debug: In ra token để kiểm tra
                     Console.WriteLine($"🔍 Config token: {configToken}");
                     Console.WriteLine($"🔍 Env token: {envToken}");
+                    
+                    // Logic đọc token
+                    string botToken;
+                    if (!string.IsNullOrWhiteSpace(configToken))
+                    {
+                        botToken = configToken;
+                        Console.WriteLine("🔍 Using config token");
+                    }
+                    else if (!string.IsNullOrWhiteSpace(envToken))
+                    {
+                        botToken = envToken;
+                        Console.WriteLine("🔍 Using env token");
+                    }
+                    else
+                    {
+                        botToken = fallbackToken;
+                        Console.WriteLine("🔍 Using fallback token");
+                    }
+                    
                     Console.WriteLine($"🔍 Final bot token length: {botToken?.Length ?? 0}");
                     Console.WriteLine($"🔍 Final bot token starts with: {botToken?.Substring(0, Math.Min(10, botToken?.Length ?? 0))}");
                     
