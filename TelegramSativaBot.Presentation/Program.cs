@@ -20,7 +20,21 @@ namespace TelegramSativaBot.Presentation
             var builder = Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((context, config) =>
                 {
-                    config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+                    // Try multiple possible locations for appsettings.json
+                    var possiblePaths = new[]
+                    {
+                        "appsettings.json",
+                        "TelegramSativaBot.Presentation/appsettings.json"
+                    };
+
+                    foreach (var path in possiblePaths)
+                    {
+                        if (System.IO.File.Exists(path))
+                        {
+                            config.AddJsonFile(path, optional: false, reloadOnChange: true);
+                            break;
+                        }
+                    }
                 })
                 .ConfigureServices((context, services) =>
                 {
