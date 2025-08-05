@@ -42,11 +42,22 @@ namespace TelegramSativaBot.Presentation
                 .ConfigureServices((context, services) =>
                 {
                     var botToken = context.Configuration["BotConfiguration:Token"] ?? 
-                                  Environment.GetEnvironmentVariable("BOT_TOKEN");
+                                  Environment.GetEnvironmentVariable("BOT_TOKEN") ??
+                                  "8348243210:AAFVQVv7oiEHc4IjblVqoKYb7ozapvUCfKw"; // Fallback token
                     
                     // Debug: In ra token để kiểm tra
                     Console.WriteLine($"🔍 Bot token length: {botToken?.Length ?? 0}");
                     Console.WriteLine($"🔍 Bot token starts with: {botToken?.Substring(0, Math.Min(10, botToken?.Length ?? 0))}");
+                    
+                    // Debug: In ra tất cả biến môi trường
+                    Console.WriteLine("🔍 Environment variables:");
+                    foreach (var env in Environment.GetEnvironmentVariables().Cast<DictionaryEntry>())
+                    {
+                        if (env.Key.ToString().Contains("BOT", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Console.WriteLine($"  {env.Key}: {env.Value}");
+                        }
+                    }
                     
                     if (string.IsNullOrWhiteSpace(botToken))
                         throw new Exception("❌ Thiếu bot token trong appsettings.json hoặc biến môi trường BOT_TOKEN");
