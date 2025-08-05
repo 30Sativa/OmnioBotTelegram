@@ -23,7 +23,4 @@ WORKDIR /app
 # Copy published files
 COPY --from=build /out .
 
-# Copy appsettings.json from build stage
-COPY --from=build /app/TelegramSativaBot.Presentation/appsettings.json .
-
 ENTRYPOINT ["dotnet", "TelegramSativaBot.Presentation.dll"]
