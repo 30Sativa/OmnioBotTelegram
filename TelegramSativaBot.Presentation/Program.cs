@@ -43,6 +43,11 @@ namespace TelegramSativaBot.Presentation
                 {
                     var botToken = context.Configuration["BotConfiguration:Token"] ?? 
                                   Environment.GetEnvironmentVariable("BOT_TOKEN");
+                    
+                    // Debug: In ra token để kiểm tra
+                    Console.WriteLine($"🔍 Bot token length: {botToken?.Length ?? 0}");
+                    Console.WriteLine($"🔍 Bot token starts with: {botToken?.Substring(0, Math.Min(10, botToken?.Length ?? 0))}");
+                    
                     if (string.IsNullOrWhiteSpace(botToken))
                         throw new Exception("❌ Thiếu bot token trong appsettings.json hoặc biến môi trường BOT_TOKEN");
 
