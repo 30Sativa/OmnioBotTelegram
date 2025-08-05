@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q8Vw3g+yUhM=",
+  "dgSpecHash": "1Av9f9mguYE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\thitr\\OneDrive\\Desktop\\OmnioBotTelegram-\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thitr\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\thitr\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",

@@ -402,5 +402,5 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
-# Thêm dòng này để ignore file appsettings.json
-appsettings.json
+# Thêm dòng này để ignore file appsettings.json (but allow template)
+# appsettings.json

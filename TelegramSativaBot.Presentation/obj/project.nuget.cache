@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V0sK7A3uvH4=",
+  "dgSpecHash": "dDUFEejmU80=",
   "success": true,
-  "projectFilePath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Presentation\\TelegramSativaBot.Presentation.csproj",
+  "projectFilePath": "C:\\Users\\thitr\\OneDrive\\Desktop\\OmnioBotTelegram-\\TelegramSativaBot.Presentation\\TelegramSativaBot.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thitr\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.8\\microsoft.extensions.configuration.9.0.8.nupkg.sha512",
     "C:\\Users\\thitr\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.8\\microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512",

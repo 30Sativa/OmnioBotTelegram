@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TelegramSativaBot.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8d43dc7cb4e65949f92964ec31f7e6db021b93f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+796e0ad5e1a9dd21b4f29b135db52383d9674885")]
 [assembly: System.Reflection.AssemblyProductAttribute("TelegramSativaBot.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TelegramSativaBot.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

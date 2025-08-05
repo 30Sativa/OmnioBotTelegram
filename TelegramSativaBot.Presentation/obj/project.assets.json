@@ -1822,11 +1822,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Presentation\\TelegramSativaBot.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\thitr\\OneDrive\\Desktop\\OmnioBotTelegram-\\TelegramSativaBot.Presentation\\TelegramSativaBot.Presentation.csproj",
       "projectName": "TelegramSativaBot.Presentation",
-      "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Presentation\\TelegramSativaBot.Presentation.csproj",
+      "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\OmnioBotTelegram-\\TelegramSativaBot.Presentation\\TelegramSativaBot.Presentation.csproj",
       "packagesPath": "C:\\Users\\thitr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\OmnioBotTelegram-\\TelegramSativaBot.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1847,11 +1847,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj": {
-              "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj"
+            "C:\\Users\\thitr\\OneDrive\\Desktop\\OmnioBotTelegram-\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj": {
+              "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\OmnioBotTelegram-\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj"
             },
-            "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj"
+            "C:\\Users\\thitr\\OneDrive\\Desktop\\OmnioBotTelegram-\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\OmnioBotTelegram-\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj"
             }
           }
         }

@@ -35,12 +35,16 @@ namespace TelegramSativaBot.Presentation
                             break;
                         }
                     }
+                    
+                    // Add environment variables
+                    config.AddEnvironmentVariables();
                 })
                 .ConfigureServices((context, services) =>
                 {
-                    var botToken = context.Configuration["BotConfiguration:Token"];
+                    var botToken = context.Configuration["BotConfiguration:Token"] ?? 
+                                  Environment.GetEnvironmentVariable("BOT_TOKEN");
                     if (string.IsNullOrWhiteSpace(botToken))
-                        throw new Exception("❌ Thiếu bot token trong appsettings.json");
+                        throw new Exception("❌ Thiếu bot token trong appsettings.json hoặc biến môi trường BOT_TOKEN");
 
                     services.AddInfrastructure(botToken);
                     services.AddSingleton<UpdateHandler>();
