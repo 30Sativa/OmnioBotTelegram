@@ -8,6 +8,7 @@ using TelegramSativaBot.Application.Handlers;
 using TelegramSativaBot.Infrastructure;
 using Telegram.Bot.Types;
 using System;
+using System.Collections;
 
 namespace TelegramSativaBot.Presentation
 {
