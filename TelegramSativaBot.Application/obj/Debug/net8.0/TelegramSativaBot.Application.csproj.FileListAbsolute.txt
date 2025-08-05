@@ -1,0 +1,15 @@
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\bin\Debug\net8.0\TelegramSativaBot.Application.deps.json
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\bin\Debug\net8.0\TelegramSativaBot.Application.dll
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\bin\Debug\net8.0\TelegramSativaBot.Application.pdb
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\bin\Debug\net8.0\TelegramSativaBot.Domain.dll
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\bin\Debug\net8.0\TelegramSativaBot.Domain.pdb
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\TelegramSativaBot.Application.csproj.AssemblyReference.cache
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\TelegramSativaBot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\TelegramSativaBot.Application.AssemblyInfoInputs.cache
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\TelegramSativaBot.Application.AssemblyInfo.cs
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\TelegramSativaBot.Application.csproj.CoreCompileInputs.cache
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\Telegram.8AFFC46A.Up2Date
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\TelegramSativaBot.Application.dll
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\refint\TelegramSativaBot.Application.dll
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\TelegramSativaBot.Application.pdb
+C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Application\obj\Debug\net8.0\ref\TelegramSativaBot.Application.dll

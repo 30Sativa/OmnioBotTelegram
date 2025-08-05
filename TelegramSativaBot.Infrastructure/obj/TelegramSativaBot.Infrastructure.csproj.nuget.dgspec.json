@@ -1,0 +1,230 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Application\\TelegramSativaBot.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Application\\TelegramSativaBot.Application.csproj",
+        "projectName": "TelegramSativaBot.Application",
+        "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Application\\TelegramSativaBot.Application.csproj",
+        "packagesPath": "C:\\Users\\thitr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj": {
+                "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[22.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj",
+        "projectName": "TelegramSativaBot.Domain",
+        "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj",
+        "packagesPath": "C:\\Users\\thitr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj",
+        "projectName": "TelegramSativaBot.Infrastructure",
+        "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Infrastructure\\TelegramSativaBot.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\thitr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Application\\TelegramSativaBot.Application.csproj": {
+                "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Application\\TelegramSativaBot.Application.csproj"
+              },
+              "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj": {
+                "projectPath": "C:\\Users\\thitr\\OneDrive\\Desktop\\Ki 5\\PRN212\\Temp\\TelegramSativaBot\\TelegramSativaBot.Domain\\TelegramSativaBot.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[22.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
