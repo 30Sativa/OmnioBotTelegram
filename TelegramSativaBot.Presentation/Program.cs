@@ -47,39 +47,19 @@ namespace TelegramSativaBot.Presentation
                     var envToken = Environment.GetEnvironmentVariable("BOT_TOKEN");
                     var fallbackToken = "8348243210:AAFVQVv7oiEHc4IjblVqoKYb7ozapvUCfKw";
                     
-                    // Debug: In ra token để kiểm tra
-                    Console.WriteLine($"🔍 Config token: {configToken}");
-                    Console.WriteLine($"🔍 Env token: {envToken}");
-                    
                     // Logic đọc token
                     string botToken;
                     if (!string.IsNullOrWhiteSpace(configToken))
                     {
                         botToken = configToken;
-                        Console.WriteLine("🔍 Using config token");
                     }
                     else if (!string.IsNullOrWhiteSpace(envToken))
                     {
                         botToken = envToken;
-                        Console.WriteLine("🔍 Using env token");
                     }
                     else
                     {
                         botToken = fallbackToken;
-                        Console.WriteLine("🔍 Using fallback token");
-                    }
-                    
-                    Console.WriteLine($"🔍 Final bot token length: {botToken?.Length ?? 0}");
-                    Console.WriteLine($"🔍 Final bot token starts with: {botToken?.Substring(0, Math.Min(10, botToken?.Length ?? 0))}");
-                    
-                    // Debug: In ra tất cả biến môi trường
-                    Console.WriteLine("🔍 Environment variables:");
-                    foreach (var env in Environment.GetEnvironmentVariables().Cast<DictionaryEntry>())
-                    {
-                        if (env.Key.ToString().Contains("BOT", StringComparison.OrdinalIgnoreCase))
-                        {
-                            Console.WriteLine($"  {env.Key}: {env.Value}");
-                        }
                     }
                     
                     if (string.IsNullOrWhiteSpace(botToken))
@@ -110,8 +90,17 @@ namespace TelegramSativaBot.Presentation
                 cancellationToken: cts.Token
             );
 
-            Console.WriteLine("🤖 Bot đang chạy... Nhấn Enter để dừng");
-            Console.ReadLine();
+            Console.WriteLine("🤖 Bot đang chạy...");
+            
+            // Chạy liên tục cho đến khi có signal dừng
+            var waitHandle = new ManualResetEvent(false);
+            Console.CancelKeyPress += (sender, e) =>
+            {
+                e.Cancel = true;
+                waitHandle.Set();
+            };
+            
+            waitHandle.WaitOne();
             cts.Cancel();
         }
 
