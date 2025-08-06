@@ -1,32 +1,85 @@
-# Deployment Guide
-
-## Environment Variables
-
-For deployment, you need to set the following environment variable:
-
-- `BOT_TOKEN`: Your Telegram bot token from @BotFather
+# Deployment Guide for Telegram Bot
 
 ## Render Deployment
 
-1. Connect your repository to Render
-2. Set the environment variable `BOT_TOKEN` in your Render service settings
-3. The Docker build will now work correctly with the updated configuration
+### Environment Variables
+Set these environment variables in your Render service:
 
-## Local Development
+- `BOT_TOKEN`: Your Telegram bot token
+- `ASPNETCORE_ENVIRONMENT`: `Production`
+- `ASPNETCORE_URLS`: `http://0.0.0.0:8080`
 
-For local development, you can either:
+### Build Command
+```bash
+dotnet publish TelegramSativaBot.Presentation/TelegramSativaBot.Presentation.csproj -c Release -o out
+```
 
-1. Set the `BOT_TOKEN` environment variable
-2. Or create a local `appsettings.json` file with your bot token
+### Start Command
+```bash
+dotnet out/TelegramSativaBot.Presentation.dll
+```
 
-## Docker Build
+### Port Configuration
+The application will automatically bind to port 8080 as configured in `appsettings.json`.
 
-The Dockerfile has been updated to handle the missing `appsettings.json` file. The application will now:
+### Health Check
+The bot provides health check endpoints:
+- `GET /` - Main status page
+- `GET /health` - Health check endpoint
 
-1. Look for `appsettings.json` in the project directory
-2. Fall back to environment variables if the file doesn't exist
-3. Use the `BOT_TOKEN` environment variable for the bot token
+### Troubleshooting
 
-## Security Note
+#### Polling Conflict Errors
+If you see "Conflict: terminated by other getUpdates request" errors:
 
-The `appsettings.json` file is now included in the repository but uses environment variable substitution. For production, always use environment variables to set the bot token. 
+1. **Ensure only one instance is running**: The updated code includes instance locking to prevent multiple instances.
+
+2. **Check for duplicate deployments**: Make sure you don't have multiple services running the same bot.
+
+3. **Clear webhook if needed**: If you previously used webhooks, clear them:
+   ```bash
+   curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/deleteWebhook"
+   ```
+
+4. **Monitor logs**: The bot now includes better error handling and retry logic.
+
+#### Port Detection Issues
+If Render shows "Timed out: Port scan timeout reached":
+
+1. The application now includes a web server that binds to port 8080
+2. Health check endpoints are available at `/` and `/health`
+3. Ensure the `ASPNETCORE_URLS` environment variable is set correctly
+
+### Configuration
+
+The bot supports both polling and webhook modes:
+
+#### Polling Mode (Default)
+- Set `BotConfiguration:UseWebhook` to `false` or leave empty
+- Best for development and simple deployments
+
+#### Webhook Mode
+- Set `BotConfiguration:UseWebhook` to `true`
+- Set `BotConfiguration:WebhookUrl` to your webhook URL
+- Requires HTTPS endpoint
+
+### Error Handling
+
+The bot now includes:
+- Automatic retry logic for polling conflicts
+- Better error logging
+- Graceful shutdown handling
+- Instance locking to prevent duplicates
+
+### Monitoring
+
+Check the application logs for:
+- `🤖 Bot đang chạy ở chế độ polling...` - Bot started successfully
+- `✅ Polling đã được khởi động lại thành công` - Recovery from conflicts
+- `❌ Lỗi polling:` - Error messages with details
+
+### Performance Tips
+
+1. **Use appropriate timeouts**: Adjust `PollingTimeout` in configuration
+2. **Limit retries**: Configure `MaxRetries` to prevent infinite loops
+3. **Monitor memory usage**: The bot includes cleanup logic for long-running instances 
