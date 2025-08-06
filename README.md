@@ -20,5 +20,3 @@ Bot Telegram sử dụng .NET 8, kiến trúc Clean Architecture.
 Bot sẽ trả lời tự động theo nội dung lệnh bạn gửi.
 
 ---
-
-> ⚠️ Lưu ý: Để sử dụng bot, bạn cần đảm bảo bot đã được deploy và đang chạy online.
