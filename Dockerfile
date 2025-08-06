@@ -23,8 +23,8 @@ WORKDIR /app
 # Copy published files
 COPY --from=build /out .
 
-# Copy appsettings.json from build context
-COPY TelegramSativaBot.Presentation/appsettings.json ./appsettings.json
+# Không copy appsettings.json nữa, chỉ dùng biến môi trường
+# COPY TelegramSativaBot.Presentation/appsettings.json ./appsettings.json
 
 # Expose port 8080
 EXPOSE 8080
