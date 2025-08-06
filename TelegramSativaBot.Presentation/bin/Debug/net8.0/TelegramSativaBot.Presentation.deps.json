@@ -9,6 +9,7 @@
       "TelegramSativaBot.Presentation/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Hosting": "9.0.8",
+          "Telegram.Bot": "22.6.0",
           "TelegramSativaBot.Domain": "1.0.0",
           "TelegramSativaBot.Infrastructure": "1.0.0"
         },

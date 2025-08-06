@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
-    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Telegram.Bot" Version="22.6.0" />
   </ItemGroup>
 
   <ItemGroup>

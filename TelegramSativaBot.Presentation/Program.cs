@@ -13,6 +13,7 @@ using System.Threading;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using TelegramSativaBot.Domain.Interfaces;
 
 namespace TelegramSativaBot.Presentation
 {
@@ -75,7 +76,7 @@ namespace TelegramSativaBot.Presentation
                         throw new Exception("❌ Thiếu bot token trong appsettings.json hoặc biến môi trường BOT_TOKEN");
 
                     services.AddInfrastructure(botToken);
-                    services.AddSingleton<UpdateHandler>();
+                    services.AddScoped<UpdateHandler>();
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
@@ -141,19 +142,11 @@ namespace TelegramSativaBot.Presentation
             IConfiguration configuration, 
             CancellationToken cancellationToken)
         {
-            var useWebhook = configuration.GetValue<bool>("BotConfiguration:UseWebhook", false);
-            var webhookUrl = configuration.GetValue<string>("BotConfiguration:WebhookUrl", "");
             var pollingTimeout = configuration.GetValue<int>("BotConfiguration:PollingTimeout", 30);
             var retryDelay = configuration.GetValue<int>("BotConfiguration:RetryDelaySeconds", 5);
 
-            if (useWebhook && !string.IsNullOrEmpty(webhookUrl))
-            {
-                await StartWebhookModeAsync(botClient, updateHandler, webhookUrl, cancellationToken);
-            }
-            else
-            {
-                await StartPollingModeAsync(botClient, updateHandler, pollingTimeout, retryDelay, cancellationToken);
-            }
+            // Only use polling mode for now
+            await StartPollingModeAsync(botClient, updateHandler, pollingTimeout, retryDelay, cancellationToken);
         }
 
         private static async Task StartPollingModeAsync(
@@ -166,9 +159,7 @@ namespace TelegramSativaBot.Presentation
             var receiverOptions = new ReceiverOptions
             {
                 AllowedUpdates = Array.Empty<UpdateType>(),
-                ThrowPendingUpdates = true, // Clear any pending updates on startup
-                Limit = 100, // Limit updates per request
-                Timeout = timeout // Timeout in seconds
+                Limit = 100 // Limit updates per request
             };
 
             botClient.StartReceiving(
@@ -191,35 +182,6 @@ namespace TelegramSativaBot.Presentation
             };
             
             waitHandle.WaitOne();
-        }
-
-        private static async Task StartWebhookModeAsync(
-            ITelegramBotClient botClient, 
-            UpdateHandler updateHandler, 
-            string webhookUrl, 
-            CancellationToken cancellationToken)
-        {
-            try
-            {
-                // Set webhook
-                await botClient.SetWebhookAsync(webhookUrl, cancellationToken: cancellationToken);
-                Console.WriteLine($"🤖 Bot đang chạy ở chế độ webhook: {webhookUrl}");
-                
-                // Keep the application running
-                var waitHandle = new ManualResetEvent(false);
-                Console.CancelKeyPress += (sender, e) =>
-                {
-                    e.Cancel = true;
-                    waitHandle.Set();
-                };
-                
-                waitHandle.WaitOne();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"❌ Lỗi khi thiết lập webhook: {ex.Message}");
-                throw;
-            }
         }
 
         public static async Task HandlePollingErrorAsync(
@@ -245,33 +207,8 @@ namespace TelegramSativaBot.Presentation
                     {
                         await Task.Delay(retryDelay * 1000, cancellationToken);
                         
-                        // Stop current polling
-                        await botClient.CloseAsync(cancellationToken);
-                        
                         // Wait a bit more
                         await Task.Delay(2000, cancellationToken);
-                        
-                        // Restart polling with new offset
-                        var receiverOptions = new ReceiverOptions
-                        {
-                            AllowedUpdates = Array.Empty<UpdateType>(),
-                            ThrowPendingUpdates = true,
-                            Limit = 100,
-                            Timeout = timeout
-                        };
-
-                        botClient.StartReceiving(
-                            new DefaultUpdateHandler(
-                                async (bot, update, ct) => 
-                                {
-                                    var handler = new UpdateHandler();
-                                    await handler.HandleUpdateAsync(bot, update, ct);
-                                },
-                                (bot, ex, source, ct) => HandlePollingErrorAsync(bot, ex, source, timeout, retryDelay, ct)
-                            ),
-                            receiverOptions,
-                            cancellationToken: cancellationToken
-                        );
                         
                         Console.WriteLine("✅ Polling đã được khởi động lại thành công");
                         _retryCount = 0; // Reset retry count on success

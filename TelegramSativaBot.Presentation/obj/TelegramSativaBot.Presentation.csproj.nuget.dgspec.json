@@ -282,6 +282,10 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[22.6.0, )"
             }
           },
           "imports": [
@@ -296,6 +300,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

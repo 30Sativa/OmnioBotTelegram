@@ -15,3 +15,21 @@ C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativ
 C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\refint\TelegramSativaBot.Infrastructure.dll
 C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\TelegramSativaBot.Infrastructure.pdb
 C:\Users\thitr\OneDrive\Desktop\Ki 5\PRN212\Temp\TelegramSativaBot\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\ref\TelegramSativaBot.Infrastructure.dll
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\bin\Debug\net8.0\TelegramSativaBot.Infrastructure.deps.json
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\bin\Debug\net8.0\TelegramSativaBot.Infrastructure.dll
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\bin\Debug\net8.0\TelegramSativaBot.Infrastructure.pdb
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\bin\Debug\net8.0\TelegramSativaBot.Application.dll
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\bin\Debug\net8.0\TelegramSativaBot.Domain.dll
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\bin\Debug\net8.0\TelegramSativaBot.Application.pdb
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\bin\Debug\net8.0\TelegramSativaBot.Domain.pdb
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\TelegramSativaBot.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\TelegramSativaBot.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\TelegramSativaBot.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\TelegramSativaBot.Infrastructure.AssemblyInfo.cs
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\TelegramSativaBot.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\TelegramSativaBot.Infrastructure.sourcelink.json
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\Telegram.5DAB8C74.Up2Date
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\TelegramSativaBot.Infrastructure.dll
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\refint\TelegramSativaBot.Infrastructure.dll
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\TelegramSativaBot.Infrastructure.pdb
+C:\Users\thitr\OneDrive\Desktop\OmnioBotTelegram-\TelegramSativaBot.Infrastructure\obj\Debug\net8.0\ref\TelegramSativaBot.Infrastructure.dll
