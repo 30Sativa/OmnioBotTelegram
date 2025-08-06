@@ -90,8 +90,13 @@ namespace TelegramSativaBot.Presentation
                                 await context.Response.WriteAsync("🤖 Telegram Bot is running!");
                             });
                             
-                            endpoints.MapGet("/health", async context =>
+                            endpoints.MapMethods("/health", new[] { "GET", "HEAD" }, async context =>
                             {
+                                if (context.Request.Method == "HEAD")
+                                {
+                                    context.Response.StatusCode = 200;
+                                    return;
+                                }
                                 await context.Response.WriteAsync("✅ Bot is healthy and running");
                             });
                         });
