@@ -10,7 +10,7 @@ Bot Telegram sử dụng .NET 8, kiến trúc Clean Architecture.
   - `/echo <nội dung>`: Lặp lại nội dung bạn gửi
 
 ## 📲 Cách sử dụng bot trên Telegram
-1. Tìm kiếm tên bot của bạn trên Telegram (hoặc nhấn vào link bot nếu có).
+1. Tìm kiếm tên bot **DailyHelperBot** trên Telegram hoặc nhấn vào link: [https://t.me/DailyHelperBot](https://t.me/DailyHelperBot)
 2. Nhấn "Start" để bắt đầu trò chuyện với bot.
 3. Gửi các lệnh như:
    - `/start`
