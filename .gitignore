@@ -404,3 +404,9 @@ FodyWeavers.xsd
 
 # Thêm dòng này để ignore file appsettings.json (but allow template)
 # appsettings.json
+
+# JetBrains Rider
+*.sln.iml
+
+# Application specific files
+appsettings.json
